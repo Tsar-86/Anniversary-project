@@ -3,13 +3,13 @@ const hoursElement = document.getElementById('hours');
 const minsElement = document.getElementById('mins');
 const secondsElement = document.getElementById('seconds');
 
-const unniversary = "04 Nov 2021";
+const anniversary = "04 Nov 2021";
 
 let countdown = () => {
-	const unniversaryDate = new Date(unniversary);
+	const anniversaryDate = new Date(anniversary);
 	const currentDate = new Date();
 
-	const totalSeconds = (unniversaryDate - currentDate) / 1000;
+	const totalSeconds = (anniversaryDate - currentDate) / 1000;
 
 	const days = Math.floor(totalSeconds / 3600 / 24);
 	const hours = Math.floor(totalSeconds / 3600) % 24;
