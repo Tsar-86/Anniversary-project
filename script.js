@@ -6,10 +6,9 @@ const secondsElement = document.getElementById('seconds');
 const anniversary = "04 Nov 2021";
 
 let countdown = () => {
-	const anniversaryDate = new Date(anniversary);
-	const currentDate = new Date();
-
-	const totalSeconds = (anniversaryDate - currentDate) / 1000;
+	// const anniversaryDate = new Date(anniversary);
+	// const currentDate = new Date();
+	// const totalSeconds = (anniversaryDate - currentDate) / 1000;
 
 	const days = Math.floor(totalSeconds / 3600 / 24);
 	const hours = Math.floor(totalSeconds / 3600) % 24;
